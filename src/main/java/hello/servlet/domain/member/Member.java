@@ -9,7 +9,17 @@ public class Member {
     private String username;
     private int age;
 
+    @Override
+    public String toString() {
+        return "Member{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
     public Member() {
+
     }
 
     public Member(String username, int age) {
